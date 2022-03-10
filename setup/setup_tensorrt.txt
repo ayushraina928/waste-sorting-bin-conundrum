@@ -1,0 +1,40 @@
+Setup TensorRT ------------
+
+Uses for TensorRT
+- Weight and Activation Precision Calibration
+- Layers and Tensor Fusion
+- Kernel auto-tuning
+- Dynamic Tensor Memory
+
+
+Procedure
+
+1. Install TensorRT ----
+
+Download the TensorRT local repo file that matches the Ubuntu version and CPU architecture that you are using.
+Install TensorRT from the Debian local repo package. Replace ubuntuxx04, cudax.x, trt8.x.x.x and yyyymmdd with your specific OS version, CUDA version, TensorRT version and package date.
+os="ubuntuxx04"
+tag="cudax.x-trt8.x.x.x-yyyymmdd"
+sudo dpkg -i nv-tensorrt-repo-${os}-${tag}_1-1_amd64.deb
+sudo apt-key add /var/nv-tensorrt-repo-${os}-${tag}/7fa2af80.pub
+
+sudo apt-get update
+sudo apt-get install tensorrt
+
+If using Python 3.x:
+python3 -m pip install numpy
+sudo apt-get install python3-libnvinfer-dev
+
+The following additional packages will be installed:
+python3-libnvinfer
+
+If you plan to use TensorRT with TensorFlow:
+python3 -m pip install protobuf
+sudo apt-get install uff-converter-tf
+The graphsurgeon-tf package will also be installed with the above command.
+
+2. PyTorch TensorRT
+pip3 install torch-tensorrt -f https://github.com/NVIDIA/Torch-TensorRT/releases
+
+
+
