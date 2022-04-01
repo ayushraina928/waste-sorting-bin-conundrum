@@ -11,4 +11,9 @@ var isUnknownMobile = (isWebkit && isSmallScreen);
 var isMobile = (isIOS || isAndroid || isNewBlackBerry || isWebOS || isWindowsMobile || isUnknownMobile);     
 var isTablet = (isIPad || (isMobile && !isSmallScreen));     
 
-if ( isMobile && isSmallScreen && document.cookie.indexOf( "mobileFullSiteClicked=") < 0 ) mobileRedirect(); 
+if (isTablet && isMobile && isSmallScreen && document.cookie.indexOf( "mobileFullSiteClicked=") < 0 ){
+    document.getElementById("device").innerHTML = "MOBILE"
+}
+else{
+    document.getElementById("device").innerHTML = "NOT A MOBILE"
+}
