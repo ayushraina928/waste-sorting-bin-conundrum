@@ -11,7 +11,7 @@ var isUnknownMobile = (isWebkit && isSmallScreen);
 var isMobile = (isIOS || isAndroid || isNewBlackBerry || isWebOS || isWindowsMobile || isUnknownMobile);     
 var isTablet = (isIPad || (isMobile && !isSmallScreen));     
 
-if (isTablet && isMobile && isSmallScreen && document.cookie.indexOf( "mobileFullSiteClicked=") < 0 ){
+if ((isTablet || isMobile) && isSmallScreen && document.cookie.indexOf( "mobileFullSiteClicked=") < 0 ){
     document.getElementById("device").innerHTML = "MOBILE"
 }
 else{
