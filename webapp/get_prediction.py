@@ -4,7 +4,8 @@ from torch.autograd import Variable
 from torchvision import transforms
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+#device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = "cpu"
 
 class_names = ['bandaid',
  'battery',
@@ -32,8 +33,10 @@ class_names = ['bandaid',
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 print("Loading model")
-vgg16_all_simply= torch.load('./models/model_vgg_all_simply.pt')
+map_location=torch.device('cpu')
+vgg16_all_simply= torch.load('./models/model_vgg_all_simply.pt',map_location=device)
 vgg16_all_simply.eval()
+vgg16_all_simply.to(device)
 print("Model Loaded")
 
 min_img_size = 256
@@ -62,4 +65,4 @@ def pred_image(model,img_path,class_names,transform_pipeline,show_image=False,de
 def get_pred(img_path):
     return pred_image(vgg16_all_simply,img_path,class_names,transform_pipeline, show_image = True,device = device)
 
-print(get_pred('./images/img.jpg'))
+#print(get_pred('./images/img.jpg'))
