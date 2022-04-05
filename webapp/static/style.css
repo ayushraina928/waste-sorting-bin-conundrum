@@ -1,5 +1,4 @@
 h1 {
-    color: navajowhite;
     font-variant-caps: all-small-caps;
     font-size: 46px;
 }
@@ -10,10 +9,8 @@ h3 {
 }
 
 li {
-  color: red;
   font-size: 50px;
 }
 
 body {
-    background: firebrick;
 }

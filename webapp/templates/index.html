@@ -4,17 +4,15 @@
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
-    <h1>{{message}}</h1>
 
-    <h3>On sale this week alone:</h3>
-    <ol>
-      <li>Flask By Example</li>
-      <li>Uncluttered Flask</li>
-      <li>Flask From First Principles</li>
-    </ol>
+    <h1>Object Detection</h1>
 
-    <h1 id="device"></h1>
+    <div id="device"></div>
+
+    <h2 id="pred"></h2>
 
     <script src="/static/scripts.js" charset="utf-8"></script>
+
+    <input type='file' onchange="readURL(this);" />
   </body>
 </html>
