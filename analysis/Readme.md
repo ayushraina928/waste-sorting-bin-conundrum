@@ -51,7 +51,7 @@ Size: 2.42 GB
 
 Please go through our model analysis from the `analysis.ipynb` file.
 
-![Analysis Notebook](analysis.ipynb)
+[Analysis Notebook](analysis.ipynb)
 
 
 ### 🏁 Importance of Checkpoints
