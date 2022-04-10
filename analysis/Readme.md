@@ -17,19 +17,16 @@ Size: 3.91 GB
 
 But this is only half the story, with just large number of training images we cannot expect the predictions would work perfectly. We need to focus on the quality of data as well.
 
-
-![data classes](1.png)
+<img src="1.png" alt="Data Classes" style="height: 400px;"/>
 
 
 ## 🧹 Improving Data Quality
-
-![data cleaning](2.png)
-
+  
 >   There’s a common adage that data scientists spend 80% of their time cleaning data and 20% modeling. With image classifiers, it is more like **90% cleaning to 10%** modeling. 
 
-Image datasets tend to be large and cumbersome compared to text-only datasets, and training multiple models on our large dataset was a considerable time sink. 
+Image datasets tend to be large and cumbersome compared to text-only datasets, and training multiple models on our large dataset was a considerable time sink. The slow nature of the training process also meant we couldn’t ‘course correct’ in real time - we would often have to wait long periods of time for the training to complete before choosing our next steps based on the output.
 
-The slow nature of the training process also meant we couldn’t ‘course correct’ in real time - we would often have to wait long periods of time for the training to complete before choosing our next steps based on the output.
+<img src="2.png" alt="Data Cleaning" style="height: 260px;align:center;"/>
 
 Cleaning is a vital part of training an image classifier, especially with data scraped from the web is not capable of overcoming a poor dataset. We stuck to our process with the famous philosophy in Machine Learning:
 
@@ -39,10 +36,9 @@ Garbage in ----> Garbage Out
 
 We have some samples of the images that were removed during the cleaning phase:
 
-![data cleaning example](3.png)
+<img src="3.png" alt="Data Cleaning Ex1" style="height: 500px;"/>
 
-![data cleaning example](4.png)
-
+<img src="4.png" alt="Data Cleaning Ex2" style="height: 500px;"/>
 
 ``` 
 Dataset: 22,504 items
@@ -51,11 +47,11 @@ Size: 2.42 GB
 
 <br>
 
-# ✳️ Analysis of Models
+# Analysis of Models
 
 Please go through our model analysis from the `analysis.ipynb` file.
 
-![models](analysis.ipynb)
+![Analysis Notebook](analysis.ipynb)
 
 
 ### 🏁 Importance of Checkpoints
