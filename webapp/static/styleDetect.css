@@ -1,0 +1,36 @@
+*{
+            font-family: "Inter",sans-serif;
+        }
+
+        .my-header-row{
+            background-color: #34C759;
+        }
+
+        .my-text-align-center{
+            text-align: center;
+        }
+
+        .my-text-align-left{
+            text-align: left;
+        }
+
+        .my-text-align-right{
+            text-align: right;
+        }
+
+        .my-container-header{
+            font-weight: 600; 
+            font-size: 15px; 
+            letter-spacing: -.02em; 
+            color: #3a3a3a; 
+            border-bottom-style: solid; 
+            border-color: #C7C7CC; 
+            border-width: 2px; 
+            border-radius: 1px;
+        }
+
+        .my-button-style{
+            background-color: white; 
+            border-color: white;
+            border-style:solid;
+        }
