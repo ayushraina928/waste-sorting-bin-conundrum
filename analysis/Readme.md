@@ -51,7 +51,8 @@ Size: 2.42 GB
 
 Please go through our model analysis from the `analysis.ipynb` file.
 
-[Analysis Notebook](analysis.ipynb)
+[Classification Analysis Notebook](analysis.ipynb)
+[Object Detection Data Analysis Notebook](object-detection-processes.ipynb)
 
 
 ### 🏁 Importance of Checkpoints
