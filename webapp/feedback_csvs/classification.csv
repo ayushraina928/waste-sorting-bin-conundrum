@@ -1,0 +1,3 @@
+Image-name,class_or_det,Predic
+img_b3c09081-9348-438a-9972-9dd5a89089e0.jpg,classification,"Predicted Index : 4, Class : cans, Confidence Level : 9.0%"
+img_bd104b40-36cc-4fdb-9e21-d33cef61b4fd.jpg,classification,"Predicted Index : 20, Class : thermometer, Confidence Level : 5.7%"
